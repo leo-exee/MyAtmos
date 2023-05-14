@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
+    android:elevation="10dp"
+    android:background="@drawable/rounded_border">
+
+    <TextView
+        android:fontFamily="@font/montserrat_medium"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:fontFamily="@font/quicksand_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pm10"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:fontFamily="@font/quicksand_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pm2.5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:fontFamily="@font/quicksand_bold"
+            android:id="@+id/pm10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value 10"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:elevation="3dp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:fontFamily="@font/quicksand_bold"
+            android:id="@+id/pm25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value 25"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:elevation="3dp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+</LinearLayout>
